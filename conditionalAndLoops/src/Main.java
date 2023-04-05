@@ -1,3 +1,5 @@
+import javax.sound.midi.Soundbank;
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Main {
@@ -193,55 +195,219 @@ public class Main {
          */
 
 //        14,Volume Of Prism
+        /*
+        Scanner in  = new Scanner(System.in);
+        System.out.println("Enter base :");
+        int b = in.nextInt();
+        System.out.println("Enter Height :");
+        int h = in.nextInt();
 
+        int area = b*h;
 
+        System.out.println("Area = " + area);
+
+         */
 
 //        15,Volume Of Cylinder
+        /*
+        Scanner in  = new Scanner(System.in);
+        System.out.println("Enter Radius :");
+        int r = in.nextInt();
+        System.out.println("Enter Height :");
+        int h = in.nextInt();
 
-        //____________________________------------------------------------------___________________________________
+        float area = (r*r*h) * 3.1416f;
+
+        System.out.println("volume = " + area);
+
+         */
 
 
 //        16,Volume Of Sphere
+
+//        Scanner in  = new Scanner(System.in);
+//        System.out.println("Enter Radius :");
+//        int r = in.nextInt();
+//
+//        float area =(float) ((4/3)*(3.1416)*(r*r*r));
+//
+//        System.out.println("volume = " + area);
+
 //        17,Volume Of Pyramid
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter Base :");
+        int base = in.nextInt();
+
+        float area = base*3.1416f/2;
+        System.out.println("Area = " + area);
+
+         */
+
 //        18,Curved Surface Area Of Cylinder
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter Radius :");
+        int r = in.nextInt();
+        System.out.println("Enter Height :");
+        int h = in.nextInt();
+
+        float area = 2*3.1416f*r*h;
+
+        System.out.println("Area :" + area);
+         */
+
 //        19,Total Surface Area Of Cube
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter Side :");
+        int s = in.nextInt();
+
+        int area = 6*s*s;
+
+        System.out.println("Area :" + area);
+
+         */
 //        20,Fibonacci Series In Java Programs
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter number to se fibonacci :");
+        int n = in.nextInt();
+
+        int p = 0;
+        int i = 1;
+        int count = 2;
+
+        while (count <= n ) {
+            int temp = i;
+            i = i+p;
+            p = temp;
+            System.out.println(i);
+            count ++;
+        }
+
+         */
+
+
 //        21,Subtract the Product and Sum of Digits of an Integer
+        /*
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+
+        int mult = 1;
+        int sum = 0;
+
+        while (n > 0) {
+            int rem = n % 10 ;
+            mult = mult * rem;
+            sum = sum + rem;
+            n = n / 10;
+        }
+
+        int result = mult - sum;
+
+         System.out.println(result);
+
+         */
+
 //        22,Input a number and print all the factors of that number (use loops).
+        /*
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            if ( n % i == 0) {
+                System.out.println(i);
+            }
+        }
+
+         */
+
 //        23,Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+        /*
+        Scanner in = new Scanner(System.in);
+        int sum = 0;
+
+        while (true) {
+            int n = in.nextInt();
+            if(n == 0) {
+                break;
+            }else {
+                sum = sum + n;
+            }
+        }
+
+        System.out.println("The sum is : " + sum );
+
+         */
+
 //        24,Take integer inputs till the user enters 0 and print the largest number from all.
+        /*
+        Scanner in = new Scanner(System.in);
+
+        int big = 0;
+
+        while (true) {
+            int n = in.nextInt();
+            if(n == 0) {
+                break;
+            }else if(n > big){
+                big = n;
+            }
+        }
+
+        System.out.println("Biggest number is : " + big );
+
+         */
+
 //        25,Addition Of Two Numbers
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter First Number :");
+        int n1 = in.nextInt();
+        System.out.println("Enter Second Number :");
+        int n2 = in.nextInt();
+
+        int sum = n1 + n2;
+
+        System.out.println("Total of two numbers : " +sum);
+
+
+        //____________________________------------------------------------------___________________________________
 
 
 //        26,Intermediate Java Programs
 //
 
-//        27,Factorial Program In Java
-//        28,Calculate Electricity Bill
-//        29,Calculate Average Of N Numbers
-//        30,Calculate Discount Of Product
-//        31,Calculate Distance Between Two Points
-//        32Calculate Commission Percentage
-//        Power In Java
-//        Calculate Depreciation of Value
-//        Calculate Batting Average
-//        Calculate CGPA Java Program
-//        Compound Interest Java Program
-//        Calculate Average Marks
-//        Sum Of N Numbers
-//        Armstrong Number In Java
-//        Find Ncr & Npr
-//        Reverse A String In Java
-//        Find if a number is palindrome or not
-//        Future Investment Value
-//        HCF Of Two Numbers Program
-//        LCM Of Two Numbers
-//        Java Program Vowel Or Consonant
-//        Perfect Number In Java
-//        Check Leap Year Or Not
-//        Sum Of A Digits Of Number
-//        Kunal is allowed to go out with his friends only on the even days of a given month. Write a program to count the number of days he can go out in the month of August.
-//        Write a program to print the sum of negative numbers, sum of positive even numbers and the sum of positive odd numbers from a list of numbers (N) entered by the user. The list terminates when the user enters a zero.
+//        1,Factorial Program In Java
+
+
+
+//        2,Calculate Electricity Bill
+//        3,Calculate Average Of N Numbers
+//        4,Calculate Discount Of Product
+//        5,Calculate Distance Between Two Points
+//        6,32Calculate Commission Percentage
+//        7,Power In Java
+//        8,Calculate Depreciation of Value
+//        9,Calculate Batting Average
+//        10,Calculate CGPA Java Program
+//        11,Compound Interest Java Program
+//        12,Calculate Average Marks
+//        13,Sum Of N Numbers
+//        14,Armstrong Number In Java
+//        15,Find Ncr & Npr
+//        16,Reverse A String In Java
+//        17,Find if a number is palindrome or not
+//        18,Future Investment Value
+//        19,HCF Of Two Numbers Program
+//        20,LCM Of Two Numbers
+//        21,Java Program Vowel Or Consonant
+//        22,Perfect Number In Java
+//        23,Check Leap Year Or Not
+//        24,Sum Of A Digits Of Number
+//        25,Kunal is allowed to go out with his friends only on the even days of a given month. Write a program to count the number of days he can go out in the month of August.
+//        26,Write a program to print the sum of negative numbers, sum of positive even numbers and the sum of positive odd numbers from a list of numbers (N) entered by the user. The list terminates when the user enters a zero.
 
     }
 }
