@@ -361,7 +361,7 @@ public class Main {
          */
 
 //        25,Addition Of Two Numbers
-
+        /*
         Scanner in = new Scanner(System.in);
         System.out.println("Enter First Number :");
         int n1 = in.nextInt();
@@ -372,26 +372,215 @@ public class Main {
 
         System.out.println("Total of two numbers : " +sum);
 
+         */
 
         //____________________________------------------------------------------___________________________________
 
 
-//        26,Intermediate Java Programs
+//        ---------------------------------Intermediate Java Programs----------------------------------------------
 //
 
 //        1,Factorial Program In Java
+        /*
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
 
+        int fact = 1,i = 1;
 
+        for ( i = 1; i <=n ; i++) {
+            fact = fact * i;
+        }
+
+        System.out.println("The Factorial of " + n + " is " + fact);
+
+         */
 
 //        2,Calculate Electricity Bill
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter unit consumed : ");
+        int unit = in.nextInt();
+        int bill = 0;
+
+          if (unit <= 100) {
+              bill = unit * 10;
+          } else if (unit > 100 && unit <= 200) {
+              bill = (100 * 10) + ((unit - 100) * 15 );
+          }else if ( unit > 200 && unit <= 300 ) {
+              bill = (100 * 10) + ( 100 * 15 ) + ((unit - 200 ) * 20);
+          }else {
+              bill = (100 * 10) + ( 100 * 15 ) + (100 * 20) + ((unit - 300) * 25);
+          }
+
+        System.out.println("Total bill for " + unit + " units is : " + bill );
+
+         */
+
 //        3,Calculate Average Of N Numbers
+        /*
+        Scanner in = new Scanner(System.in);
+        int total = 0;
+        int count = 0;
+        while (true) {
+            System.out.println("Enter Number to see average or 0 to see average : ");
+            int n = in.nextInt();
+            if(n == 0 ) {
+                break;
+            }else{
+                count ++;
+                total += n;
+            }
+        }
+
+        int avg = total/count;
+
+        System.out.println("The average is : " + avg);
+
+         */
+
 //        4,Calculate Discount Of Product
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter total order amount : ");
+        int n = in.nextInt();
+        int dis = 0, total = 0;
+
+        if(n < 1000) {
+            System.out.println("Your order is not eligible for discount.");
+        }else if(n >= 1000 && n < 2000) {
+            dis = (n*10)/100;
+            total = n - dis;
+            System.out.println("Your order value is " + n + " , discount is " + dis + " and Total payable amount is " + total);
+        }if(n >= 2000 && n < 3000) {
+            dis = (n*20)/100;
+            total = n - dis;
+            System.out.println("Your order value is " + n + " , discount is " + dis + " and Total payable amount is " + total);
+        }if(n >= 3000) {
+            dis = (n*30)/100;
+            total = n - dis;
+            System.out.println("Your order value is " + n + " , discount is " + dis + " and Total payable amount is " + total);
+        }
+
+         */
+
 //        5,Calculate Distance Between Two Points
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("distance from your home to barasat :");
+        float n = in.nextFloat();
+        System.out.println("distance from jaguli to barasat :");
+        float n2 = in.nextFloat();
+
+        float distance = n2 - n;
+
+        System.out.println("Distance between your home to jaguli is : " + distance);
+
+         */
+
 //        6,32Calculate Commission Percentage
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("How much sales you made ?");
+        int n = in.nextInt();
+
+
+        if (n < 500000) {
+            System.out.println("Your commission in this sales is 5%");
+        }if (n > 500000 && n < 100000) {
+            System.out.println("Your commission in this sales is 10%");
+        }if (n > 1000000) {
+            System.out.println("Your commission in this sales is 15%");
+        }
+
+         */
+
 //        7,Power In Java
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        int n = in.nextInt();
+        System.out.println("Enter the power : ");
+        int n2 = in.nextInt();
+
+        double power = Math.pow(n,n2);
+
+        System.out.println("The result is : " + power);
+
+         */
+
+
 //        8,Calculate Depreciation of Value
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the assets value :");
+        int value = in.nextInt();
+        System.out.println("Enter depreciation time frame : ");
+        int time = in.nextInt();
+
+        //Lets assume the standerd depreciation rate is 15%
+
+        int depreciation = value;
+
+        for (int i = 1; i <= time; i++) {
+            depreciation = depreciation - (depreciation * 15)/100;
+        }
+
+        System.out.println("The remaining value is " + depreciation);
+
+         */
+
 //        9,Calculate Batting Average
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Total score :");
+        int score = in.nextInt();
+        System.out.println("Total outs :");
+        int out = in.nextInt();
+
+        int avg = score/out;
+
+        System.out.println("Batting Average is " + avg);
+
+         */
+
 //        10,Calculate CGPA Java Program
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter Number gain in Bengali");
+        int n1= in.nextInt();
+        System.out.println("Enter Number gain in English");
+        int n2 = in.nextInt();
+        System.out.println("Enter Number gain in Accountancy");
+        int n3 = in.nextInt();
+        System.out.println("Enter Number gain in Financial Modeling");
+        int n4 = in.nextInt();
+        System.out.println("Enter Number gain in Cost Accounting");
+        int n5 = in.nextInt();
+        System.out.println("Enter Number gain in Auditing");
+        int n6 = in.nextInt();
+
+        int total = n1 + n2 + n3 + n4 + n5 + n6;
+
+        float avg = total / 6;
+
+        if(avg < 25 ){
+            System.out.println("Your CGPA is 'D' and Average" + avg);
+        }if(avg <= 35 ){
+            System.out.println("Your CGPA is 'C' and Average" + avg);
+        }if(avg <= 45 ){
+            System.out.println("Your CGPA is 'B' and Average" + avg);
+        }if(avg <= 60 ){
+            System.out.println("Your CGPA is 'A' and Average" + avg);
+        }if(avg <= 75 ){
+            System.out.println("Your CGPA is 'A+' and Average" + avg);
+        }if(avg <= 90 ){
+            System.out.println("Your CGPA is 'AA' and Average" + avg);
+        }
+
+         */
+
+        //____________________________------------------------------------------___________________________________
+
 //        11,Compound Interest Java Program
 //        12,Calculate Average Marks
 //        13,Sum Of N Numbers
